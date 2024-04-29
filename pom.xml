@@ -22,12 +22,16 @@
 
   <modules>
     <module>com.io7m.jcoords.core</module>
+    <module>com.io7m.jcoords.tests</module>
     <module>com.io7m.jcoords.documentation</module>
   </modules>
 
   <properties>
+    <!-- Configuration. -->
     <io7m.api.previousVersion>2.0.0</io7m.api.previousVersion>
     <io7m.java.targetJavaVersion>21</io7m.java.targetJavaVersion>
+
+    <!-- Third-party dependencies. -->
     <io7m.org.immutables.version>2.10.1</io7m.org.immutables.version>
   </properties>
 
@@ -39,9 +43,9 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/io7m/jcoords</url>
-    <connection>scm:git:https://github.com/io7m/jcoords</connection>
-    <developerConnection>scm:git:https://github.com/io7m/jcoords</developerConnection>
+    <url>https://www.github.com/io7m-com/jcoords</url>
+    <connection>scm:git:https://www.github.com/io7m-com/jcoords</connection>
+    <developerConnection>scm:git:https://www.github.com/io7m-com/jcoords</developerConnection>
   </scm>
 
   <developers>
@@ -54,7 +58,7 @@
   </developers>
 
   <issueManagement>
-    <url>https://github.com/io7m/jcoords/issues</url>
+    <url>https://www.github.com/io7m-com/jcoords/issues</url>
     <system>GitHub Issues</system>
   </issueManagement>
 
@@ -72,7 +76,7 @@
 
   <ciManagement>
     <system>GitHub Actions</system>
-    <url>https://github.com/jcoords/actions</url>
+    <url>https://www.github.com/io7m-com/jcoords/actions</url>
   </ciManagement>
 
   <prerequisites>
