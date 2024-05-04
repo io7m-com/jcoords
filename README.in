@@ -1,0 +1,15 @@
+
+## jcoords
+
+The `jcoords` package provides simple and fast pre/postcondition and invariant
+checking functions.
+
+## Features
+
+* Functions for converting between Cartesian coordinate systems.
+* Written in pure Java 21.
+* High coverage test suite.
+* [OSGi-ready](https://www.osgi.org/)
+* [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System)
+* ISC license.
+

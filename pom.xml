@@ -23,7 +23,6 @@
   <modules>
     <module>com.io7m.jcoords.core</module>
     <module>com.io7m.jcoords.tests</module>
-    <module>com.io7m.jcoords.documentation</module>
   </modules>
 
   <properties>
@@ -72,6 +71,10 @@
       <id>sonatype-nexus-staging</id>
       <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <ciManagement>
@@ -168,13 +171,6 @@
               </dependency>
             </annotationProcessorPaths>
           </configuration>
-        </plugin>
-
-        <!-- KStructural Maven Plugin -->
-        <plugin>
-          <groupId>com.io7m.kstructural</groupId>
-          <artifactId>io7m-kstructural-maven-plugin</artifactId>
-          <version>0.3.1</version>
         </plugin>
 
         <!-- Spot bugs -->
