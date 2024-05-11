@@ -29,4 +29,8 @@ checking functions.
 * [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System)
 * ISC license.
 
+## Usage
+
+Use the `CAxis` and `CAxisSystemConversions` classes to obtain transformation
+matrices to transform vectors in one coordinate system convention to another.
 
