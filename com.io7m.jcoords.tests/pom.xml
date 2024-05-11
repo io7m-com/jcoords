@@ -11,14 +11,26 @@
     <artifactId>com.io7m.jcoords</artifactId>
     <version>3.0.0</version>
   </parent>
-  <artifactId>com.io7m.jcoords.core</artifactId>
+  <artifactId>com.io7m.jcoords.tests</artifactId>
 
   <packaging>jar</packaging>
-  <name>com.io7m.jcoords.core</name>
-  <description>Coordinate system functions (Core)</description>
+  <name>com.io7m.jcoords.tests</name>
+  <description>Coordinate system functions (Test suite)</description>
   <url>https://www.io7m.com/software/jcoords</url>
 
+  <properties>
+    <mdep.analyze.skip>true</mdep.analyze.skip>
+    <checkstyle.skip>true</checkstyle.skip>
+    <spotbugs.skip>true</spotbugs.skip>
+  </properties>
+
   <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>com.io7m.jcoords.core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
     <dependency>
       <groupId>com.io7m.jequality</groupId>
       <artifactId>com.io7m.jequality.core</artifactId>
@@ -60,17 +72,14 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <scope>test</scope>
     </dependency>
   </dependencies>
 

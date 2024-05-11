@@ -8,12 +8,12 @@
   <parent>
     <groupId>com.io7m.primogenitor</groupId>
     <artifactId>com.io7m.primogenitor.full</artifactId>
-    <version>7.0.0</version>
+    <version>8.2.0</version>
   </parent>
 
   <groupId>com.io7m.jcoords</groupId>
   <artifactId>com.io7m.jcoords</artifactId>
-  <version>2.0.0</version>
+  <version>3.0.0</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.jcoords</name>
@@ -22,25 +22,29 @@
 
   <modules>
     <module>com.io7m.jcoords.core</module>
-    <module>com.io7m.jcoords.documentation</module>
+    <module>com.io7m.jcoords.tests</module>
   </modules>
 
   <properties>
-    <io7m.api.previousVersion>1.0.0</io7m.api.previousVersion>
-    <io7m.org.immutables.version>2.9.0</io7m.org.immutables.version>
+    <!-- Configuration. -->
+    <io7m.api.previousVersion>2.0.0</io7m.api.previousVersion>
+    <io7m.java.targetJavaVersion>21</io7m.java.targetJavaVersion>
+
+    <!-- Third-party dependencies. -->
+    <io7m.org.immutables.version>2.10.1</io7m.org.immutables.version>
   </properties>
 
   <licenses>
     <license>
-      <name>ISC License</name>
+      <name>ISC</name>
       <url>https://io7m.com/license/isc.txt</url>
     </license>
   </licenses>
 
   <scm>
-    <url>https://github.com/io7m/jcoords</url>
-    <connection>scm:git:https://github.com/io7m/jcoords</connection>
-    <developerConnection>scm:git:https://github.com/io7m/jcoords</developerConnection>
+    <url>https://www.github.com/io7m-com/jcoords</url>
+    <connection>scm:git:https://www.github.com/io7m-com/jcoords</connection>
+    <developerConnection>scm:git:https://www.github.com/io7m-com/jcoords</developerConnection>
   </scm>
 
   <developers>
@@ -53,7 +57,7 @@
   </developers>
 
   <issueManagement>
-    <url>https://github.com/io7m/jcoords/issues</url>
+    <url>https://www.github.com/io7m-com/jcoords/issues</url>
     <system>GitHub Issues</system>
   </issueManagement>
 
@@ -65,13 +69,17 @@
     </site>
     <repository>
       <id>sonatype-nexus-staging</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <ciManagement>
     <system>GitHub Actions</system>
-    <url>https://github.com/jcoords/actions</url>
+    <url>https://www.github.com/io7m-com/jcoords/actions</url>
   </ciManagement>
 
   <prerequisites>
@@ -83,22 +91,22 @@
       <dependency>
         <groupId>com.io7m.jequality</groupId>
         <artifactId>com.io7m.jequality.core</artifactId>
-        <version>3.0.0</version>
+        <version>3.0.1</version>
       </dependency>
       <dependency>
         <groupId>com.io7m.junreachable</groupId>
         <artifactId>com.io7m.junreachable.core</artifactId>
-        <version>4.0.0</version>
+        <version>4.0.2</version>
       </dependency>
       <dependency>
         <groupId>com.io7m.jtensors</groupId>
         <artifactId>com.io7m.jtensors.core</artifactId>
-        <version>10.0.0</version>
+        <version>11.0.0</version>
       </dependency>
       <dependency>
         <groupId>com.io7m.jaffirm</groupId>
         <artifactId>com.io7m.jaffirm.core</artifactId>
-        <version>4.0.0</version>
+        <version>4.0.1</version>
       </dependency>
 
       <dependency>
@@ -115,12 +123,12 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>2.0.0-alpha7</version>
+        <version>2.0.13</version>
       </dependency>
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.3.0-alpha14</version>
+        <version>1.5.6</version>
       </dependency>
 
       <dependency>
@@ -129,14 +137,14 @@
         <version>${io7m.org.immutables.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.io7m.immutables.style</groupId>
-        <artifactId>com.io7m.immutables.style</artifactId>
-        <version>0.0.1</version>
+        <groupId>com.io7m.immutables-style</groupId>
+        <artifactId>com.io7m.immutables-style</artifactId>
+        <version>1.0.0</version>
       </dependency>
       <dependency>
         <groupId>com.io7m.primogenitor</groupId>
         <artifactId>com.io7m.primogenitor.support</artifactId>
-        <version>7.0.0</version>
+        <version>8.2.0</version>
       </dependency>
 
       <dependency>
@@ -163,13 +171,6 @@
               </dependency>
             </annotationProcessorPaths>
           </configuration>
-        </plugin>
-
-        <!-- KStructural Maven Plugin -->
-        <plugin>
-          <groupId>com.io7m.kstructural</groupId>
-          <artifactId>io7m-kstructural-maven-plugin</artifactId>
-          <version>0.3.1</version>
         </plugin>
 
         <!-- Spot bugs -->
