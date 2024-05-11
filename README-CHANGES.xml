@@ -37,9 +37,14 @@
         <c:change compatible="false" date="2017-11-16T00:00:00+00:00" summary="Removed dependency on com.io7m.jnull."/>
       </c:changes>
     </c:release>
-    <c:release date="2022-04-09T18:04:40+00:00" is-open="false" ticket-system="com.github.io7m.jcoords" version="2.0.0">
+    <c:release date="2022-04-09T00:00:00+00:00" is-open="false" ticket-system="com.github.io7m.jcoords" version="2.0.0">
       <c:changes>
         <c:change compatible="false" date="2022-04-09T00:00:00+00:00" summary="Require JDK 17"/>
+      </c:changes>
+    </c:release>
+    <c:release date="2024-05-11T17:44:57+00:00" is-open="true" ticket-system="com.github.io7m.jcoords" version="3.0.0">
+      <c:changes>
+        <c:change date="2024-05-11T17:44:57+00:00" summary="Update com.io7m.jtensors:com.io7m.jtensors.core 10.0.0 → 11.0.0."/>
       </c:changes>
     </c:release>
   </c:releases>
